@@ -35,9 +35,12 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 /**
- * Classe responsável por validar a importacao dos objetos asm no banco de dados
+ * <h1>Checktool</h1>
+ * Programa responsável por validar a importacao dos objetos ASM no banco de dados.
  *
  * @author Dario Alves Junior
+ * @version 1.0.0
+ * @since   2016-12-19 
  */
 public class App {
 
