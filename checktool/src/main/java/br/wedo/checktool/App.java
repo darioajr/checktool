@@ -174,7 +174,7 @@ public class App {
     optionPassword.setRequired(true);
     options.addOption(optionPassword);
     
-    Option optionForce = new Option("f", "force", false, "force version by objUUID (Optional) ");
+    Option optionForce = new Option("f", "force", false, "force version by objUUID (Optional)");
     optionForce.setRequired(false);
     options.addOption(optionForce);
 
