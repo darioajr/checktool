@@ -52,7 +52,7 @@ public class App {
    * @throws SQLException
    */
   public static boolean objExist(Connection con, String objUuid, boolean spec) throws SQLException {
-    String sql = String.format("SELECT obj_uuid FROM af_t_obj WHERE %1='%2' ", 
+    String sql = String.format("SELECT obj_uuid FROM af_t_obj WHERE %s='%s' ", 
                                                 spec ? "obj_spec_uuid" : "obj_uuid", objUuid);
     Statement stmt = con.createStatement();
     ResultSet res = stmt.executeQuery(sql);
@@ -132,7 +132,7 @@ public class App {
             if (name.contains(objName)) {
               objUuid = element.getTextContent();
               if (!objExist(con, objUuid,spec)) {
-                System.out.println("\nObject: " + objUuid + " not imported");
+                System.out.println("Object: " + objUuid + " was not imported");
                 retorno = false;
               }
             }
@@ -200,11 +200,11 @@ public class App {
     try {
       Connection con = getConnection(databaseConnection, userConnection, passwordConnection);
 
-      System.out.println("\nStarting checking installed objects...");
+      System.out.println("\nChecktool - Starting checking installed objects...\n");
 
       boolean importSuccess = checkUuids(con, inputFilePath, forceVersion);
       
-      System.out.println(String.format("\nInstalation Status: %s", importSuccess ? "All objects have been successfully imported"
+      System.out.println(String.format("\nInstalation Status: %s\n", importSuccess ? "All objects have been successfully imported"
 				: "The installation was not completed successfully"));
 
       con.close();
