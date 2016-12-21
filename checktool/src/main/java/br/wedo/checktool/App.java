@@ -1,13 +1,14 @@
 package main.java.br.wedo.checktool;
 
 import java.io.InputStream;
+import java.io.IOException;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.io.IOException;
+
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -25,14 +26,16 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
 import org.xml.sax.SAXException;
 
 public class App {
-	
+
 	private static final Logger log = Logger.getLogger(App.class.getName());
 
 	public static boolean ObjetExist(Connection con, String objUUID) throws SQLException {
@@ -71,8 +74,6 @@ public class App {
 
 		boolean retorno = true;
 		try {
-
-			String sql;
 
 			ZipFile zfile = new ZipFile(file);
 			String myFile = "export/manifest.xml";
