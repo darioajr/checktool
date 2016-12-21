@@ -51,7 +51,7 @@ public class App {
    * @param con Conexao com banco de dados
    * @param objUuid Id do objeto
    * @param spec Se verdadeiro pesquisa por qualquer versao, se não pesquisa por versão específica
-   * @return Verdadeiro caso o objeto exista no banco de dados
+   * @return Verdadeiro caso o objeto exista no banco de dados.
    * @throws SQLException
    */
   public static boolean objExist(Connection con, String objUuid, boolean spec) throws SQLException {
