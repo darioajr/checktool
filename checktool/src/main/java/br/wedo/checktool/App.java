@@ -121,7 +121,7 @@ public class App {
         doc.getDocumentElement().normalize();
         NodeList nodeList = doc.getElementsByTagName("s");
         String objUuid = "";
-        String objName = spec ? "objUUID" : "objectUUID";
+        String objName = spec ? "objectUUID" : "objUUID";
 
         for (int temp = 0; temp < nodeList.getLength(); temp++) {
           Node node = nodeList.item(temp);
@@ -192,7 +192,7 @@ public class App {
     }
 
     String inputFilePath = cmd.getOptionValue("ams");
-    boolean forceVersion = cmd.hasOption("force");
+    boolean spec = !cmd.hasOption("force");
     String databaseConnection = cmd.getOptionValue("connection");
     String userConnection = cmd.getOptionValue("user");
     String passwordConnection = cmd.getOptionValue("password");
@@ -202,7 +202,7 @@ public class App {
 
       System.out.println("\nChecktool - Starting checking installed objects...\n");
 
-      boolean importSuccess = checkUuids(con, inputFilePath, forceVersion);
+      boolean importSuccess = checkUuids(con, inputFilePath, spec);
       
       System.out.println(String.format("\nInstalation Status: %s\n", importSuccess ? "All objects have been successfully imported"
 				: "The installation was not completed successfully"));
