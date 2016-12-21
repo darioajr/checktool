@@ -36,7 +36,7 @@ import org.xml.sax.SAXException;
 
 /**
  * <h1>Checktool</h1>
- * Programa responsável por validar a importacao dos objetos ASM no banco de dados.
+ * Programa responsável por validar a importacao dos objetos do arquivo ASM no banco de dados.
  *
  * @author Dario Alves Junior
  * @version 1.0.0
