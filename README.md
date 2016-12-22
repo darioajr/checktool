@@ -10,7 +10,7 @@ Tool to verify that the AMS file objects have been imported into the database
 | -p,--password <arg>     database password                         |
 | -u,--user <arg>         database user                             |
 
- Usase
+ Usage
  -----
  ```
  java -jar checktool.jar -a file.ams -c jdbc:oracle:thin:@xx.xx.xx.xx:Port/ServiceName -u userName -p Password
