@@ -1,6 +1,8 @@
 # checktool
 Tool to verify that the AMS file objects have been imported into the database
 
+[![Build Status](https://travis-ci.org/darioajr/checktool.svg?branch=master)](https://travis-ci.org/darioajr/checktool)
+
 | Parameters                                                        |
 | ----------------------------------------------------------------  |
 | -a,--ams <arg>          input ams file path                       |
