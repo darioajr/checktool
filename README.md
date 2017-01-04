@@ -2,6 +2,7 @@
 Tool to verify that the AMS file objects have been imported into the database
 
 [![Build Status](https://travis-ci.org/darioajr/checktool.svg?branch=master)](https://travis-ci.org/darioajr/checktool)
+[![Code Coverage](https://codecov.io/github/darioajr/checktool/coverage.svg)](https://codecov.io/gh/darioajr/checktool)
 
 
 | Parameters                                                        |
