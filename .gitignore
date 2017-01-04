@@ -1,5 +1,6 @@
-checktool/.settings/
-checktool/.classpath
-checktool/.project
+.settings/
+.classpath
+.project
+/target/
 
 
