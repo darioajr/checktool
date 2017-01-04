@@ -44,7 +44,7 @@
     </build>
     <dependencies>
 	    <dependency>
-			<groupId>com.oracle.jdbc</groupId>
+			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc7</artifactId>
 			<version>12.1.0.2</version>
 		</dependency>
@@ -61,27 +61,15 @@
 		</dependency>
     </dependencies>
     <repositories>
-    <repository>
-      <id>maven.oracle.com</id>
-      <name>oracle-maven-repo</name>
-      <url>https://maven.oracle.com</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </releases>
-  </repository>
+   <repository>
+    <snapshots>
+        <enabled>false</enabled>
+        <updatePolicy>never</updatePolicy>
+    </snapshots>
+    <id>code.lds.org</id>
+    <name>code.lds.org</name>
+    <url>https://code.lds.org/nexus/content/repositories/main-repo/</url>
+    <layout>default</layout>
+</repository>
   </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>maven.oracle.com</id>
-      <name>oracle-maven-repo</name>
-      <url>https://maven.oracle.com</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
 </project>
