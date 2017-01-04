@@ -2,6 +2,6 @@ language: java
 jdk:
   - oraclejdk8
 sudo: false
-script: mvn clean verify
+script: mvn clean cobertura:cobertura verify
 after_success:
   - bash <(curl -s https://codecov.io/bash)
