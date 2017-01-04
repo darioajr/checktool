@@ -8,6 +8,28 @@
   <offline/>
   <pluginGroups/>
   <servers>
+    <server> 
+      <id>maven.oracle.com </id> 
+      <username>${env.CI_ORACLE_USERNAME}</username> 
+      <password>${env.CI_ORACLE_PASSWORD}</password> 
+       <configuration>
+         <basicAuthScope>
+           <host>ANY </host>
+           <port>ANY </port>
+           <realm>OAM 11g </realm>
+         </basicAuthScope>
+         <httpConfiguration>
+            <all>
+              <params>
+                <property>
+                  <name>http.protocol.allow-circular-redirects </name>
+                  <value>%b,true </value>
+                </property>
+              </params>
+            </all>
+         </httpConfiguration>
+       </configuration>
+    </server> 
     <server>
       <id>sonatype-nexus-snapshots</id>
       <username>${env.CI_DEPLOY_USERNAME}</username>
