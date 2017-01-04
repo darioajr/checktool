@@ -9,7 +9,6 @@
   <description>Verify Imported Objects</description>
   <url>https://github.com/darioajr/checktool</url>
   <build>
-		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -72,16 +71,4 @@
 			<scope>test</scope>
 		</dependency>
     </dependencies>
-    <repositories>
-   <repository>
-    <snapshots>
-        <enabled>false</enabled>
-        <updatePolicy>never</updatePolicy>
-    </snapshots>
-    <id>code.lds.org</id>
-    <name>code.lds.org</name>
-    <url>https://code.lds.org/nexus/content/repositories/main-repo/</url>
-    <layout>default</layout>
-</repository>
-  </repositories>
 </project>

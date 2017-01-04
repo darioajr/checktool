@@ -1,14 +1,22 @@
-package br.wedo.checktool;
+package test.java.br.wedo.checktool;
 
+import java.sql.SQLException;
 import java.util.*;
 
+import main.java.br.wedo.checktool.*;
+
+import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.*;
 
 public class AppTest {
 	@Test
 	public void testObjExist() {
 		App app = new App();
-		assertEquals(app.objExist(null, "", false), false);
+		try {
+			assertEquals(app.objExist(null, "", false), false);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
