@@ -8,6 +8,33 @@
   <name>checktool</name>
   <description>Verify Imported Objects</description>
   <url>https://github.com/darioajr/checktool</url>
+	<issueManagement>
+        <url>https://github.com/darioajr/checktool/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+	<scm>
+        <url>https://github.com/darioajr/checktool</url>
+        <connection>scm:git:git://github.com/darioajr/checktool.git</connection>
+        <developerConnection>scm:git:git@github.com:darioajr/checktool.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <email>tacianosilva@gmail.com</email>
+            <name>Taciano Morais Silva</name>
+            <url>https://github.com/tacianosilva</url>
+            <id>tacianosilva</id>
+        </developer>
+    </developers>
+
   <build>
 		<plugins>
 			<plugin>
