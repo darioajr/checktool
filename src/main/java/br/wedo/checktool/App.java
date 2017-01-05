@@ -6,9 +6,7 @@ import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Collections;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -38,7 +36,7 @@ import org.xml.sax.SAXException;
 
 
 /**
- * <h1>Checktool</h1> Programa respons·vel por validar a importacao dos objetos do arquivo ASM no banco de dados.
+ * <h1>Checktool</h1> Programa respons√°vel por validar a importacao dos objetos do arquivo ASM no banco de dados.
  * @author Dario Alves Junior
  * @version 1.0.0
  * @since 2016-12-19
@@ -57,7 +55,7 @@ public class App {
    * Metodo de verificacao de objeto no banco de dados.
    * @param con Conexao com banco de dados
    * @param objUuid Id do objeto
-   * @param spec Se verdadeiro pesquisa por qualquer versao, se n„o pesquisa por vers„o especÌfica
+   * @param spec Se verdadeiro pesquisa por qualquer versao, se n√£o pesquisa por vers√£o espec√≠fica
    * @return Verdadeiro caso o objeto exista no banco de dados.
    * @throws SQLException
    */
@@ -84,11 +82,11 @@ public class App {
   }
 
   /**
-   * Metodo de conex„o com banco de dados.
+   * Metodo de conex√£o com banco de dados.
    * @param dbUrl Conexao com banco de dados
    * @param user usuario de acesso ao banco de dados
    * @param password Senha de acesso ao banco de dados
-   * @return Conex„o com banco de dados
+   * @return Conex√£o com banco de dados
    * @throws SQLException,
    *         ClassNotFoundException
    */
@@ -131,10 +129,10 @@ public class App {
   }
 
   /**
-   * Metodo de entrada, valida os parametros e chama a rotina de validaÁ„o.
+   * Metodo de entrada, valida os parametros e chama a rotina de valida√ß√£o.
    * @param con Conexao com banco de dados
    * @param file Arquivo AMS
-   * @param spec Se verdadeiro pesquisa por qualquer versao, se n„o pesquisa por vers„o especÌfica
+   * @param spec Se verdadeiro pesquisa por qualquer versao, se n√£o pesquisa por vers√£o espec√≠fica
    * @return Verdadeiro caso todos os objetos sejam importados
    * @throws SQLException,
    *         ParserConfigurationException
@@ -192,7 +190,7 @@ public class App {
   }
 
   /**
-   * Metodo de entrada, valida os parametros e chama a rotina de validaÁ„o.
+   * Metodo de entrada, valida os parametros e chama a rotina de valida√ß√£o.
    * @param args Argumentos da linha de comando
    */
   public static void main(String[] args) throws Exception {
@@ -243,7 +241,7 @@ public class App {
     } catch (ParseException parEx) {
       System.out.println(parEx.getMessage());
       formatter.printHelp("checktool", options);
-      System.exit(1);
+      Runtime.getRuntime().exit(1);
       return;
     } catch (Exception ex) {
       log.log(Level.SEVERE, "Error opening ams file", ex);
