@@ -1,4 +1,4 @@
-package main.java.br.wedo.checktool;
+package br.wedo.checktool;
 
 import java.io.IOException;
 import java.io.InputStream;

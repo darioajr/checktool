@@ -1,6 +1,6 @@
-package test.java.br.wedo.checktool;
+package br.wedo.checktool;
 
-import main.java.br.wedo.checktool.*;
+import br.wedo.checktool.*;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
