@@ -62,7 +62,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass>main.java.br.wedo.checktool.App</mainClass>
+							<mainClass>br.wedo.checktool.App</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
