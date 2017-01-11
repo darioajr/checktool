@@ -112,14 +112,14 @@ public class App {
                       TimeUnit.MILLISECONDS.toSeconds(eta) % TimeUnit.MINUTES.toSeconds(1));
 
       StringBuilder string = new StringBuilder(140);   
-      int percent = (int) (current * 100 / total);
+      int percent = (int) (current * 50 / total);
       string
           .append('\r')
           .append(String.join("", Collections.nCopies(percent == 0 ? 2 : 2 - (int) (Math.log10(percent)), " ")))
-          .append(String.format(" %d%% [", percent))
+          .append(String.format(" %d%% [", percent*2))
           .append(String.join("", Collections.nCopies(percent, "=")))
           .append('>')
-          .append(String.join("", Collections.nCopies(100 - percent, " ")))
+          .append(String.join("", Collections.nCopies(50 - percent, " ")))
           .append(']')
           .append(String.join("", Collections.nCopies((int)(Math.log10(total)) - (int)(Math.log10(current)), " ")))
           .append(String.format(" %d/%d, ETA: %s", current, total, etaHms));
