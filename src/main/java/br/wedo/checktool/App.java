@@ -167,7 +167,7 @@ public class App {
                 objUuid = element.getTextContent();
                 //existsObject
                 if (!existsObject(con, objUuid, spec)) {
-                  System.out.println("\rObject: " + objUuid + " was not imported");
+                  System.out.println("\rObject: " + objUuid + " was not imported                      \n");
                   retorno = false;
                 }
               }
@@ -234,7 +234,7 @@ public class App {
       Connection con = getConnection(databaseConnection, userConnection, passwordConnection);
       System.out.println("\nChecktool - Starting checking installed objects...\n");
       boolean importSuccess = checkUuids(con, inputFilePath, spec);
-      System.out.println(String.format("\nInstalation Status: %s\n",
+      System.out.println(String.format("\n\nInstalation Status: %s\n",
           importSuccess ? "All objects have been successfully imported"
                     : "The installation was not completed successfully"));
       con.close();
