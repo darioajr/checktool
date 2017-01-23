@@ -1,9 +1,9 @@
 # checktool
 Tool to verify that the AMS file objects have been imported into the database
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7329432a75fe42daa1d6415596f7b5bd)](https://www.codacy.com/app/darioajr/checktool?utm_source=github.com&utm_medium=referral&utm_content=darioajr/checktool&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/darioajr/checktool.svg?branch=master)](https://travis-ci.org/darioajr/checktool)
 [![Code Coverage](https://codecov.io/github/darioajr/checktool/coverage.svg)](https://codecov.io/gh/darioajr/checktool)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7329432a75fe42daa1d6415596f7b5bd)](https://www.codacy.com/app/darioajr/checktool?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=darioajr/checktool&amp;utm_campaign=Badge_Grade)
 <a href="https://twitter.com/darioajr">
         <img src="https://img.shields.io/badge/contact-@darioajr-blue.svg?style=flat" alt="Twitter: @darioajr" />
 </a>
