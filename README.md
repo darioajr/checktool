@@ -9,6 +9,7 @@ Tool to verify that the AMS file objects have been imported into the database
 </a>
 
 
+![](https://github.com/darioajr/checktool/blob/master/example.gif)
 
 | Parameters                                                        |
 | ----------------------------------------------------------------  |
